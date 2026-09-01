@@ -15,6 +15,7 @@ public class basicCalculator {
             }
             else if (answer.equals("+")) {
                 System.out.println(in.nextFloat()+in.nextFloat());
+                in.nextLine();
             }
         }
     }
