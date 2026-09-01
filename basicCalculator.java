@@ -8,9 +8,13 @@ public class basicCalculator {
         String answer;
         while (running) {
             System.out.println("E - exit");
+            System.out.println("S - start calculator");
             answer = in.nextLine();
             if (answer.equals("E")){
                 running = false;
+            }
+            else if (answer.equals("S")) {
+                System.out.println("Lorem-ipsum");
             }
         }
     }
