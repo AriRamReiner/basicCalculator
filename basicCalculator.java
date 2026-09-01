@@ -8,13 +8,13 @@ public class basicCalculator {
         String answer;
         while (running) {
             System.out.println("E - exit");
-            System.out.println("S - start calculator");
+            System.out.println("+ - addition");
             answer = in.nextLine();
             if (answer.equals("E")){
                 running = false;
             }
-            else if (answer.equals("S")) {
-                System.out.println("Lorem-ipsum");
+            else if (answer.equals("+")) {
+                System.out.println(in.nextFloat()+in.nextFloat());
             }
         }
     }
