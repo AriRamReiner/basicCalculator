@@ -14,8 +14,14 @@ public class basicCalculator {
                 running = false;
             }
             else if (answer.equals("+")) {
-                System.out.println(in.nextFloat()+in.nextFloat());
-                in.nextLine();
+                float total = 0;
+                answer = "0";
+                while (!answer.equals("S")) {
+                    total += Float.parseFloat(answer);
+                    System.out.print("Insert number or S to stop:  ");
+                    answer = in.nextLine();
+                }
+                System.out.println(total);
             }
         }
     }
