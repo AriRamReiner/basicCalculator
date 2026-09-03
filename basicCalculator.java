@@ -4,10 +4,10 @@ public class basicCalculator {
     public static void main(String[] args){
         //Define scanner object using "new".
         Scanner in = new Scanner(System.in);
-
+        //Given variables.
         String answer;
         float total;
-
+        //Start running loop.
         outerLoop: while (true) {
             System.out.println("E - exit");
             System.out.println("+ - addition");
@@ -30,9 +30,9 @@ public class basicCalculator {
                     break;
                 case "*":
                     total = 1; //Define total variable.
-                    answer = "1"; //Put answer in 0 to be able to turn into float.
+                    answer = "1"; //Put answer in 1 to be able to turn into float.
                     while (!answer.equals("S")) {
-                        total *= Float.parseFloat(answer); //Puts answer to total. At the start it is always 0+0.
+                        total *= Float.parseFloat(answer); //Puts answer to total. At the start it is always 1*1.
                         System.out.print("Insert number or S to stop:  ");
                         answer = in.nextLine();
                     }
