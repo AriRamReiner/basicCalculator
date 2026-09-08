@@ -20,7 +20,11 @@ public class basicCalculator {
                     total = 0; //Define total variable.
                     answer = "0"; //Put answer in 0 to be able to turn into float.
                     while (!answer.equals("S")) {
-                        total += Float.parseFloat(answer); //Puts answer to total. At the start it is always 0+0.
+                        try {
+                            total += Float.parseFloat(answer); //Puts answer to total. At the start it is always 0+0.
+                        } catch (Exception e) {
+                            System.out.println("Whoops! How about you put a CORRECT input next time.");
+                        }
                         System.out.print("Insert number or S to stop:  ");
                         answer = in.nextLine();
                     }
@@ -32,7 +36,11 @@ public class basicCalculator {
                     total = 1; //Define total variable.
                     answer = "1"; //Put answer in 1 to be able to turn into float.
                     while (!answer.equals("S")) {
-                        total *= Float.parseFloat(answer); //Puts answer to total. At the start it is always 1*1.
+                        try {
+                            total *= Float.parseFloat(answer); //Puts answer to total. At the start it is always 1*1.
+                        } catch (Exception e) {
+                            System.out.println("Whoops! How about you put a CORRECT input next time.");
+                        }
                         System.out.print("Insert number or S to stop:  ");
                         answer = in.nextLine();
                     }
